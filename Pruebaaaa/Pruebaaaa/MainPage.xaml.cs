@@ -9,11 +9,10 @@ using Xamarin.Forms;
 
 namespace Pruebaaaa
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
+   
     public partial class MainPage : ContentPage
     {
+        ArrayList datos = new ArrayList();
         public MainPage()
         {
             InitializeComponent();
@@ -21,6 +20,14 @@ namespace Pruebaaaa
 
         private void btnAgregar_Clicked(object sender, EventArgs e)
         {
+            String nombred = txtnombre.Text;
+            int horasd = Convert.ToInt32(txtHoras.Text);
+            int sueldod = Convert.ToInt32(txtHoras.Text);
+            Persona pers = new Persona(nombred, sueldod, horasd);
+            datos.Add(pers);
+            txtnombre.Text = null;
+            txtHoras.Text = null;
+            txtSueldo.Text = null;
 
         }
 
