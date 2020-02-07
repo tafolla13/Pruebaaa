@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pruebaaaa.MainPage">
+
+    <StackLayout>
+
+        <Entry x:Name="txtnombre" Placeholder="Escribe tu nombre"/>
+        <Entry x:Name="txtSueldo" Placeholder="Ingresa tu sueldo"/>
+        <Entry x:Name="txtHoras" Placeholder="Ingresa las horas de trabajo"/>
+
+        <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"/>
+        <Button x:Name="btnlimpiar" Text="Limpíar" Clicked="btnlimpiar_Clicked"/>
+        <Button x:Name="btnBuscar" Text="Buscar" Clicked="btnBuscar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
